@@ -39,7 +39,7 @@ Good Luck!\n\n"
 				printf("%s\n", optarg);
 				break;
 			case '?':
-				printf("Invalid option. Enter `./hello -h` for more information\n");
+				fprintf(stderr, "Invalid option. Enter `./hello -h` for more information\n");
 				return 1;
 		}
 	}
