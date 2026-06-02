@@ -33,7 +33,7 @@ Good Luck!\n\n"
 						);
 				break;
 			case 'v':
-				printf("Hello Version %s. All wrongs reserved.\n", VERSION);
+				printf("Hello Version %d. All wrongs reserved.\n", VERSION);
 				break;
 			case 'g':
 				printf("%s\n", optarg);
