@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include <getopt.h>
-#define VERSION "1.0.4"
+#define VERSION "1.1.0"
 
 int main(int argc, char** argv) {
 
@@ -18,7 +18,7 @@ int main(int argc, char** argv) {
 	int opt_index = 0;
 
 	// For the `getopt_long` Function
-	const static struct option lngopt[] = {
+	static const struct option lngopt[] = {
 		{"help", no_argument, 0, 'h'},
 		{"version", no_argument, 0, 'v'},
 		{"greeting", required_argument, 0, 'g'},
