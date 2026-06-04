@@ -47,5 +47,10 @@ Good Luck!\n\n"
 				return 1;
 		}
 	}
+
+	if (optind < argc) {
+		fprintf(stderr, "Remaining arguments: %s\n", argv[optind]);
+	}
+	
 	return 0;
 }
