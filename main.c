@@ -18,7 +18,7 @@ int main(int argc, char** argv) {
 	int opt_index = 0;
 
 	// For the `getopt_long` Function
-	static struct option lngopt[] = {
+	const static struct option lngopt[] = {
 		{"help", no_argument, 0, 'h'},
 		{"version", no_argument, 0, 'v'},
 		{"greeting", required_argument, 0, 'g'},
