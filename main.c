@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include <getopt.h>
-#define VERSION "1.0.3"
+#define VERSION "1.0.4"
 
 int main(int argc, char** argv) {
 
