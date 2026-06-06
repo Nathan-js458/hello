@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include <getopt.h>
-#define VERSION "1.1.1"
+#define VERSION "1.2.0"
 
 int main(int argc, char** argv) {
 
@@ -51,8 +51,12 @@ Good Luck!\n\n"
 	}
 
 	if (optind < argc) {
-		fprintf(stderr, "Remaining arguments: %s\n", argv[optind]);
-	}
+    fprintf(stderr, "Unrecognized remaining arguments:\n");
+    while (optind < argc) {
+        fprintf(stderr, "  %s\n", argv[optind++]);
+    }
+    return 1; // Ou tratar como erro, dependendo do objetivo
+}
 	
 	return 0;
 }
