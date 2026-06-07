@@ -1,4 +1,4 @@
-#ifdef __GNU__
+#if defined(__linux__) || defined(__gnu_linux__)
 #define _GNU_SOURCE
 #endif
 
