@@ -1,10 +1,10 @@
-#ifndef _WIN32
+#ifdef __GNU__
 #define _GNU_SOURCE
 #endif
 
 #include <stdio.h>
 #include <getopt.h>
-#define VERSION "1.2.0"
+#define VERSION "1.2.1"
 
 int main(int argc, char** argv) {
 
